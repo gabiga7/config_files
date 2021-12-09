@@ -1,0 +1,29 @@
+z 
+z //salut les mecs       
+yo mek      //must be freed //must be freed
+New Line with ed 
+z 
+int *a=malloc(1);                                                                  
+2 int *b = malloc(1);                                                                
+New Line with ed 
+3 int *c= malloc(1);                                                                 
+4 int *d =malloc(1);                                                                 
+5 int* e=malloc(1);  ;                                                                                                           
+6                                                                                  
+7                                                                                  
+8 free( a);                                                                         
+9 free(b );                                                                         
+10 free( c );                                                                        
+11 free (d);                                                                         
+12 free (append);                                                                    
+~                                         
+coucou 
+akecoucou 
+
+
+return a;
+return b ;
+return  c;
+returd  d  ;
+return (e);
+return (  e );

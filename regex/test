@@ -1,0 +1,10 @@
+int* a=malloc(oui);
+int* b=malloc(non);
+int* c=malloc(tg);
+
+int d=malloc(truc);//must be freed
+free(c);
+
+free(a);
+
+return b;

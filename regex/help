@@ -1,0 +1,16 @@
+find_free_lines.sh
+find_free_values.sh
+find_malloc_lines.sh
+find_malloc_values.sh
+free_comment_add.sh
+free_comment_del.sh
+
+cat text | grep -E -n -o 'free[ ]?\([ ]?[a-zA-Z0-9_]+[ ]?\)' | cut -d : -f 1
+
+cat text | grep -E -o 'free[ ]?\([ ]?[a-zA-Z0-9_]+[ ]?\)'  | grep -E -o '\([ ]?[a-zA-Z0-9_]+[ ]?\)' |grep -E -o '[a-ZA-Z0-9_]+' 
+
+cat text | grep -E -n -o '[a-zA-Z0-9_]+[ ]?=[ ]?malloc' | cut -d : -f 1
+cat text | grep -E -o '[a-zA-Z0-9_]+[ ]?=[ ]?malloc' | grep -E -o '[a-zA-Z0-9_]+[ ]?=' | grep -E -o '[a-ZA-Z0-9_]+'
+sed -i ' 3s/$/ \/\/must be freed/' text
+sed -i ' 2s/$/ \/\/must be freed/' text
+sed -i '2s/\/\/must be freed//g' text
