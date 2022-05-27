@@ -137,3 +137,34 @@ alias untar='tar -xvf'
 
 # shortcut to return on stopped process
  bind -x '"\C-a":fg'
+
+# shortcut to show tree
+ bind -x '"²":tree'
+
+# color car
+alias ccat='pygmentize -g -O style=colorful'
+
+
+# test
+#if dialog --yes-label 'Yes Button' --no-label 'No button' \
+#--yesno 'Create new file?' 10 100; then 
+#    touch new_file.txt
+#fi
+#clear
+
+#Set path to Documents
+#cd ~/Documents
+
+#past here last download
+alias pld='bash ~/scripts/pld.sh'
+
+
+#past here last download & untar & del tar
+alias pldd='bash ~/scripts/pldd.sh ; '
+
+export PATH=$PATH:/usr/lib/postgresql/13/bin
+export PGDATA=$HOME/postgres_data
+export PGHOST=/tmp
+export JAVA_HOME=/opt/jdk-17.0.1+12
+export PATH=$PATH:$JAVA_HOME/bin
+export PATH=/opt/apache-maven-3.8.4/bin:$PATH
